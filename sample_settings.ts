@@ -33,6 +33,9 @@ export default {
     labels: true,
     issues: true,
     mergeRequests: true,
+    transferOnlyOpen: false,
+    createdAfter: null,
+    updatedAfter: '2000-01-01T00:00:00Z'
   },
   debug: false,
   usePlaceholderIssuesForMissingIssues: true,
@@ -40,6 +43,7 @@ export default {
   useIssuesForAllMergeRequests: false,
   filterByLabel: null,
   skipMatchingComments: [],
+  timeout: 30000,
   mergeRequests: {
     logFile: './merge-requests.json',
     log: false,

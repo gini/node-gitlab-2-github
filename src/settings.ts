@@ -16,12 +16,16 @@ export default interface Settings {
     labels: boolean;
     issues: boolean;
     mergeRequests: boolean;
+    transferOnlyOpen: boolean;
+    createdAfter: string;
+    updatedAfter: string;
   };
   usePlaceholderIssuesForMissingIssues: boolean;
   useReplacementIssuesForCreationFails: boolean;
   useIssuesForAllMergeRequests: boolean;
   filterByLabel: string | null;
   skipMatchingComments: string[];
+  timeout: number,
   mergeRequests: {
     logFile: string;
     log: boolean;
